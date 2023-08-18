@@ -1,0 +1,50 @@
+@import './blocks/formlog';
+@import './blocks/printform';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+html, body {
+    height: 100%;
+}
+body{
+    font-family: 'Roboto Mono', monospace;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    //background-image: linear-gradient(45deg, #EFD1A9, #DFA253);
+    background-image:url(/assets/pexels-eberhard-grossgasteiger.jpeg);
+    background-size:cover;
+    &.mobile-menu-expanded{
+        overflow:hidden;
+    }
+    
+}
+
+/* stick footer on the bottom */
+#page{
+    display:flex;
+    flex-direction:column; 
+    align-items: center;
+    width:100%; 
+    max-width:100%;
+    overflow-x:hidden;
+    flex-grow:1;
+    align-items: center;
+    #content{
+        width:80%;
+        padding-left:clamp(20px, 8vw, 200px);
+        padding-right:clamp(20px, 8vw, 200px);
+    }
+}
+@media screen and (max-width:991px){
+    #page{
+        #content{
+            width:100%;
+        }
+    }
+}

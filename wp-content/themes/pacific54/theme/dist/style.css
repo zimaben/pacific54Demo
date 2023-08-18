@@ -1,0 +1,116 @@
+/*!**************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss ***!
+  \**************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);
+/*!******************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/scss/style.scss (1) ***!
+  \******************************************************************************************************************/
+.form-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; }
+  .form-cards .formlog-card {
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    width: 100%;
+    max-width: 320px;
+    padding: 56px 22px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #34363e;
+    color: #eee; }
+    .form-cards .formlog-card .formlog-body .speech {
+      aspect-ratio: 3/1;
+      background-color: white;
+      color: #1e121e;
+      z-index: 9;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      padding: 10px; }
+    .form-cards .formlog-card .formlog-body .just-the-tip {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 24px 24px 0 0;
+      border-color: white transparent transparent transparent;
+      display: block;
+      position: relative;
+      top: -10px; }
+    .form-cards .formlog-card .formlog-footer {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center; }
+  .form-cards h5.email, .form-cards h5.phone {
+    color: #a1a1aa;
+    display: flex;
+    align-items: center;
+    font-size: 12px; }
+
+.pacific-form {
+  display: flex;
+  flex-direction: column; }
+  .pacific-form h3 {
+    text-align: center; }
+  .pacific-form .form-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .pacific-form .form-inner form {
+      width: clamp(300px, 50%, 400px); }
+      .pacific-form .form-inner form input, .pacific-form .form-inner form textarea {
+        width: 100%;
+        border: none;
+        height: 33px;
+        border-radius: 6px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16); }
+      .pacific-form .form-inner form label {
+        margin: 15px 0 8px;
+        display: block; }
+  .pacific-form .rbt-title {
+    text-align: center; }
+
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  background-image: url(17f5c6770ea5fedfc0dc.jpeg);
+  background-size: cover; }
+  body.mobile-menu-expanded {
+    overflow: hidden; }
+
+/* stick footer on the bottom */
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  flex-grow: 1;
+  align-items: center; }
+  #page #content {
+    width: 80%;
+    padding-left: clamp(20px, 8vw, 200px);
+    padding-right: clamp(20px, 8vw, 200px); }
+
+@media screen and (max-width: 991px) {
+  #page #content {
+    width: 100%; } }
+
+
+/*# sourceMappingURL=style.css.map*/

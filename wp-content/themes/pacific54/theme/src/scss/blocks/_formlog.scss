@@ -1,0 +1,58 @@
+.form-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    .formlog-card{
+        //background-color: #1D1E22;
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        // background-color: #182b3a;
+        // background-image: linear-gradient(315deg, #182b3a 0%, #20a4f3 74%);
+
+        width: 100%;
+        max-width: 320px;
+        padding: 56px 22px;
+        box-sizing: border-box;
+        border-radius: 4px;
+        border: 1px solid rgb(52, 54, 62);
+        color: #eee;
+
+        .formlog-body{
+            .speech{
+                aspect-ratio: 3/1;
+                background-color: white;
+                color: #1e121e;
+                z-index: 9;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 12px;
+                padding:10px;
+            }
+            .just-the-tip{
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 24px 24px 0 0;
+                border-color: white transparent transparent transparent;
+                display: block;
+                position: relative;
+                top: -10px;
+            }
+        }
+        .formlog-footer{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    h5.email, h5.phone {
+        color: rgb(161, 161, 170);
+        display: flex;
+        align-items: center;
+        font-size:12px;
+    }
+}
